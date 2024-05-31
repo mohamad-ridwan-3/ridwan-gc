@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3003",
     "tailwind": "tailwindcss -i ./app/templates/default/index.css -o ./public/templates/default/style.css --watch",
-    "build": "next build && ./copy.sh",
+    "build": "next build",
     "start": "next start -p 65001",
     "lint": "next lint"
   },
