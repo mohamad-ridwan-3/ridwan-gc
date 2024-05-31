@@ -1,0 +1,7 @@
+p{
+    @apply mb-4;
+}
+
+ul{
+    @apply list-disc ml-7 mb-4;
+}
