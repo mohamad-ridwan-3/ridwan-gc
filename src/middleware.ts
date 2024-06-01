@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from 'next/server'
-import loginSession from "./lib/server-actions/auth/loginSession"
 import { cookies, headers } from "next/headers"
 import { session_login_name, success_registration } from "./utils"
 

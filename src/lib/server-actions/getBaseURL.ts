@@ -9,7 +9,7 @@ export default async function getBaseURL() {
     if (
         process.env.NODE_ENV === 'development' ||
         (process.env.NODE_ENV === 'production' && hostname?.includes('localhost')) ||
-        hostname === 'ridwan-storefront.vercel.app'
+        hostname === process.env.NEXT_PUBLIC_VERCEL_HOSTNAME
     ) {
         return 'https://wahyudi.ezbix.com'
     }
