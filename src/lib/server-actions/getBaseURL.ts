@@ -3,7 +3,7 @@
 import { headers } from "next/headers";
 
 export default async function getBaseURL() {
-    const headersList = headers();
+    const headersList = headers()
     const hostname = headersList.get('x-forwarded-host')
 
     if (
