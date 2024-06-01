@@ -9,22 +9,6 @@ export const config = {
 }
 
 export async function middleware(request: NextRequest) {
-    // const user = await loginSession()
-
-    // if (
-    //     !user?.data && 
-    //     !request.url.includes('/login') &&
-    //     !request.url.includes('/registration')
-    // ) {
-    //     const response = NextResponse.redirect(new URL("/login", request.url))
-
-    //     return response
-    // }else if(user?.data && request.url.includes('/login')){
-    //     const response = NextResponse.redirect(new URL("/", request.url))
-
-    //     return response
-    // }
-
     const headersList = headers();
     const hostname = headersList.get('x-forwarded-host')
 
