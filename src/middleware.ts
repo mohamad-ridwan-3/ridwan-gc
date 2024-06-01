@@ -9,7 +9,7 @@ export const config = {
 }
 
 export async function middleware(request: NextRequest) {
-    const headersList = headers();
+    const headersList = headers()
     const hostname = headersList.get('x-forwarded-host')
 
     function getMainPathURL(): string {
